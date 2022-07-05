@@ -1,3 +1,3 @@
 ## 0.0.1
 
-* TODO: Describe initial release.
+Added the Icon Button  with modifiable title, subtitle, height, width and more amazing properties.
