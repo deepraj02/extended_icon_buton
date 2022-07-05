@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
-class ProfileButtons extends StatefulWidget {
-  const ProfileButtons({
+class ExtendedIconButtons extends StatefulWidget {
+  const ExtendedIconButtons({
     Key? key,
     this.onPressed,
     this.height,
     this.width,
     this.text = "Hello Flutter",
     this.icon,
-    this.color,
+    this.buttonColor,
     this.hoverElv,
     this.textColor,
     this.titleStyle,
@@ -24,16 +24,16 @@ class ProfileButtons extends StatefulWidget {
 
   final String? text;
   final IconData? icon;
-  final Color? color;
+  final Color? buttonColor;
   final Color? iconColor;
   final Color? textColor;
   final TextStyle? titleStyle;
 
   @override
-  State<ProfileButtons> createState() => _ProfileButtonsState();
+  State<ExtendedIconButtons> createState() => _ExtendedIconButtonsState();
 }
 
-class _ProfileButtonsState extends State<ProfileButtons> {
+class _ExtendedIconButtonsState extends State<ExtendedIconButtons> {
   @override
   Widget build(BuildContext context) {
     return ClipRRect(
@@ -44,7 +44,7 @@ class _ProfileButtonsState extends State<ProfileButtons> {
         child: MaterialButton(
           hoverElevation: widget.hoverElv,
           onPressed: widget.onPressed,
-          color: widget.color,
+          color: widget.buttonColor,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
@@ -69,3 +69,4 @@ class _ProfileButtonsState extends State<ProfileButtons> {
     );
   }
 }
+
