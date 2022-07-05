@@ -1,39 +1,64 @@
-<!-- 
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# Extended Icon Button
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages). 
+Extended Icon Button package lets you add a beautiful Icon Button as per your need to your Flutter app.
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages). 
--->
+## Installation 
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
-
-## Features
-
-TODO: List what your package can do. Maybe include images, gifs, or videos.
-
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
-
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder. 
-
+1. Add the latest version of package to your pubspec.yaml (and run`dart pub get`):
+```yaml
+dependencies:
+  extended_icon_button: ^0.0.1
+```
+2. Import the package and use it in your Flutter App.
 ```dart
-const like = 'sample';
+import 'package:extended_icon_button/extended_icon_button';
 ```
 
-## Additional information
+## Example
+There are a number of properties that you can modify:
 
-TODO: Tell users more about the package: where to find more information, how to 
-contribute to the package, how to file issues, what response they can expect 
-from the package authors, and more.
+ -  height
+ - width               
+ - title 
+ - title style
+ - icon
+ - icon size
+ - icon color
+ - button color
+ - hover elevation
+ 
+
+<hr>
+
+<table>
+<tr>
+<td>
+
+```dart
+ExtendedIconButtons(
+    onPressed: () {
+        Navigator.push(context,
+            CupertinoPageRoute(builder: (context) {
+            return const SettingsPage();
+        }));
+         },
+    text: "My QR Code",
+    icon: const Icon(Iarrow_forward_ios),
+    color: const Color(0xFFC6CBDD)),
+                    ),
+                  ),
+```
+
+</td>
+<td>
+<img  src="https://user-images.githubusercontent.com/63138398/177283491-350a9d3c-611e-4074-ac7a-81af1e4cfdf2.png"  alt="">
+</td>
+</tr>
+</table>
+
+<img  src="https://user-images.githubusercontent.com/63138398/177283931-280cdbcc-6e3f-40b3-9183-f8b272089602.png"  alt="">
+
+## Next Goals
+
+ - [ ] Add Custom Border Radius Functionality.
+ 
