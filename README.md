@@ -15,7 +15,7 @@ import 'package:extended_icon_button/extended_icon_button';
 ```
 
 ## Example
-There are a number of properties that you can modify:
+There are a number of properties can be modified using this package:
 
  -  height
  - width               
