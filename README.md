@@ -7,7 +7,7 @@ Extended Icon Button package lets you add a beautiful Icon Button as per your ne
 1. Add the latest version of package to your pubspec.yaml (and run`dart pub get`):
 ```yaml
 dependencies:
-  extended_icon_button: ^0.0.1
+  extended_icon_button: ^1.0.0
 ```
 2. Import the package and use it in your Flutter App.
 ```dart
@@ -17,15 +17,17 @@ import 'package:extended_icon_button/extended_icon_button';
 ## Example
 There are a number of properties can be modified using this package:
 
- -  height
- - width               
- - title 
- - title style
- - icon
- - icon size
- - icon color
- - button color
- - hover elevation
+ - [x] height
+ - [x] width               
+ - [x] title 
+ - [x] title style
+ - [x] icon
+ - [x] icon size
+ - [x] icon color
+ - [x] button color
+ - [x] hover elevation
+ - [x] Button Gradient
+
  
 
 <hr>
@@ -58,8 +60,3 @@ ExtendedIconButtons(
 
 <img  src="https://user-images.githubusercontent.com/63138398/177283931-280cdbcc-6e3f-40b3-9183-f8b272089602.png"  alt="">
 
-## Next Goals
-
- - [ ] Add Custom Border Radius Functionality.
- - [ ] Add Custom Button Elevation Property.
- 

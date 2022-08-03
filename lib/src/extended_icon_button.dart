@@ -4,8 +4,8 @@ import 'package:sizer/sizer.dart';
 class ExtendedIconButtons extends StatefulWidget {
   const ExtendedIconButtons({
     Key? key,
-    this.onPressed,
-    this.height,
+    required this.onPressed,
+    this.height=25,
     this.width,
     this.text = "Hello Flutter",
     this.icon,
@@ -43,7 +43,7 @@ class _ExtendedIconButtonsState extends State<ExtendedIconButtons> {
     return GestureDetector(
       onTap:widget.onPressed,
       child: Container(
-        width: widget.width,
+       width: widget.width??MediaQuery.of(context).size.width * 0.90,
         height: widget.height,
         decoration: BoxDecoration(
           borderRadius: const BorderRadius.all(Radius.circular(13.0)),
