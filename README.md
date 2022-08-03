@@ -1,3 +1,20 @@
+<h1 align="center">
+
+[![MasterHead](https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif)](https://deeprajbaidya.tech)
+</h1>
+
+
+<h2 align="center">
+ 🌐Socials
+
+<br>
+
+[![Discord](https://img.shields.io/badge/Discord-%237289DA.svg?logo=discord&logoColor=white)](https://discord.gg/Wza9JVnWXn) [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/infamousdotexe) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/deeprajbaidya) [![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?logo=Twitter&logoColor=white)](https://twitter.com/deepraj022) 
+</h2>
+
+
+
+
 # Extended Icon Button
 
 Extended Icon Button package lets you add a beautiful Icon Button as per your need to your Flutter app.
@@ -28,7 +45,7 @@ There are a number of properties can be modified using this package:
  - [x] hover elevation
  - [x] Button Gradient
 
- 
+
 
 <hr>
 
@@ -37,26 +54,24 @@ There are a number of properties can be modified using this package:
 <td>
 
 ```dart
-ExtendedIconButtons(
-    onPressed: () {
-        Navigator.push(context,
-            CupertinoPageRoute(builder: (context) {
-            return const SettingsPage();
-        }));
-         },
-    text: "My QR Code",
-    icon: const Icon(Iarrow_forward_ios),
-    color: const Color(0xFFC6CBDD)),
-                    ),
-                  ),
+ExtendeddIconButton(
+      height: 50,
+      width: double.maxFinite,
+      text: "Details",
+      titleStyle: TextStyle(fontSize: 30),
+      textColor: Colors.black87,
+      icon: Icons.arrow_forward_sharp,
+      iconColor: Color.fromARGB(255, 0, 0, 0),
+      gradientColor1: Color(0xFFB84D9B),
+      gradientColor2: Color(0xFFA060B0),
+      gradientColor3: Color(0xFF8E6EC0),
+      hoverElv: 20,
+            )
 ```
 
 </td>
 <td>
-<img  src="https://user-images.githubusercontent.com/63138398/177283491-350a9d3c-611e-4074-ac7a-81af1e4cfdf2.png"  alt="">
+<img  src="https://user-images.githubusercontent.com/63138398/182602538-c154aca7-52e2-41e6-a8e7-c47fe14ffb06.png"  alt="">
 </td>
 </tr>
 </table>
-
-<img  src="https://user-images.githubusercontent.com/63138398/177283931-280cdbcc-6e3f-40b3-9183-f8b272089602.png"  alt="">
-
